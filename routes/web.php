@@ -25,6 +25,10 @@ Route::get('/contact', function () {
     return "Contact";
 });
 
+Route::get('/post/{id}', function ($id) {
+    return "This is Post number ".$id;
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
