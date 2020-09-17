@@ -59,3 +59,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## just these lines added  
+## because i want to show action
+## set DB_DATABASE=dhcl_db in .env file
+## and run 'php artisan migrate' in trminal,
+## to create user and login
+## table in dhcl_db table
