@@ -43,9 +43,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id,$name,$pass)
     {
-        return view('post')->with('id',$id);
+       // return view('post')->with('id',$id);
+       return view('post',compact('id','name','pass'));
     }
 
     /**
