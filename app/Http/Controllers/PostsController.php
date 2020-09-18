@@ -23,7 +23,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return "In postsController create() function "; 
     }
 
     /**
@@ -45,7 +45,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        return "In postsController show function ".$id;
     }
 
     /**
@@ -56,7 +56,7 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "In postsController edit function ".$id;
     }
 
     /**
