@@ -25,7 +25,7 @@ Route::get('/contact', function () {
     return "Contact";
 });
 
-Route::get('/post', 'PostController@index') ;
+Route::get('/post', 'PostsController@index') ;
 
 Auth::routes();
 
