@@ -45,7 +45,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        return "In postsController show function ".$id;
+        return view('post')->with('id',$id);
     }
 
     /**
