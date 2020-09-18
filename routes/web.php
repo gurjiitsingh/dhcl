@@ -21,9 +21,8 @@ Route::get('/about', function () {
     return "About";
 });
 
-Route::get('/contact', function () {
-    return "Contact";
-});
+Route::get('/contact', 'PostsController@contact');
+   
 
 //Route::get('/post/{id}', 'PostsController@index') ;
 
