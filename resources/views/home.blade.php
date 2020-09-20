@@ -3,7 +3,6 @@
 <x-home-master>
 
 @section('content')
-<h>HOME</h>
 
 <h1 class="my-4">Page Heading
           <small>Secondary Text</small>
