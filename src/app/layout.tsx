@@ -1,0 +1,42 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import { SiteProvider } from "@/SiteContext/SiteProvider";
+import { BargerMenu } from "@/Components/Bargermenu/BargerMenu"
+
+import "@/css/style.css";
+
+
+export const metadata: Metadata = {
+  title: "Dream Home Construction Ltd UK",
+  description: "We build your dreams with passion",
+};
+
+
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+
+
+  
+  return (
+    <html lang="en">
+      <head>
+       {/* Google Fonts via <link> tags */}
+       <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"  />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+     
+      </head>
+      <body >
+        <SiteProvider>
+        <BargerMenu />
+        {children}
+        </SiteProvider>
+      </body>
+    </html>
+  );
+}
