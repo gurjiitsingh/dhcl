@@ -72,12 +72,12 @@ export default function Footer() {
         <div className="bottom-link">
           <p className="footer-heading footer-color">Quick Links</p>
           <ul className="footer-nav">
-            <li><a className="footer-link" href="#home">Home</a></li>
-            <li><a className="footer-link" href="#services">Services</a></li>
-            <li><a className="footer-link" href="#about">About</a></li>
-            <li><a className="footer-link" href="#work">Work</a></li>
-            <li><Link className="footer-link" href="/projects">Projects</Link></li>
-            <li><Link className="footer-link" href="/blog">Blog</Link></li>
+            <li><a className="footer-link" href="https://dhcluk.com/#home">Home</a></li>
+            <li><a className="footer-link" href="https://dhcluk.com/#services">Services</a></li>
+            <li><a className="footer-link" href="https://dhcluk.com/#about">About</a></li>
+            <li><a className="footer-link" href="https://dhcluk.com/#work">Work</a></li>
+            <li><Link className="footer-link" href="https://dhcluk.com/projects">Projects</Link></li>
+            <li><Link className="footer-link" href="https://dhcluk.com/blog">Blog</Link></li>
           </ul>
         </div>
       </div>
