@@ -1,6 +1,7 @@
 'use client';
 
 import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -59,22 +60,24 @@ export default function Footer() {
         <div className="nav-col">
           <p className="footer-heading footer-color">Services</p>
           <ul className="footer-nav">
-            <li className="footer-box-link"><a className="footer-link" href="#">Extensions</a></li>
-            <li className="footer-box-link"><a className="footer-link" href="#">Roofing</a></li>
-            <li className="footer-box-link"><a className="footer-link" href="#">Driveways</a></li>
-            <li className="footer-box-link"><a className="footer-link" href="#">Electrical Works</a></li>
-            <li className="footer-box-link"><a className="footer-link" href="#">Plumbing</a></li>
-            <li className="footer-box-link"><a className="footer-link" href="#">Heating</a></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/services/extensions">Extensions</Link></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/services/roofing">Roofing</Link></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/services/driveways">Driveways</Link></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/blog/electrical-safety-uk-home-renovations">Electrical Works</Link></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/blog/bathroom-plumbing-checklist">Plumbing</Link></li>
+            <li className="footer-box-link"><Link className="footer-link" href="/services/heating">Heating</Link></li>
           </ul>
         </div>
 
         <div className="bottom-link">
-          <p className="footer-heading footer-color">Explore</p>
+          <p className="footer-heading footer-color">Quick Links</p>
           <ul className="footer-nav">
             <li><a className="footer-link" href="#home">Home</a></li>
             <li><a className="footer-link" href="#services">Services</a></li>
             <li><a className="footer-link" href="#about">About</a></li>
             <li><a className="footer-link" href="#work">Work</a></li>
+            <li><Link className="footer-link" href="/projects">Projects</Link></li>
+            <li><Link className="footer-link" href="/blog">Blog</Link></li>
           </ul>
         </div>
       </div>

@@ -4,6 +4,10 @@ import { SiteProvider } from "@/SiteContext/SiteProvider";
 import { BargerMenu } from "@/components/Bargermenu/BargerMenu"
 
 import "@/css/style.css";
+import Header from "@/components/Header";
+import HeroSection from "@/components/Hero";
+import Footer from "@/components/Footer";
+import FooterBottom from "@/components/FooterBottom";
 
 
 export const metadata: Metadata = {
@@ -34,7 +38,13 @@ export default function RootLayout({
       <body >
         <SiteProvider>
         <BargerMenu />
+ <div className="w-full mx-auto bg-gray-100 text-gray-900 ">
+         <Header />
+              <HeroSection />
         {children}
+ <Footer />
+ <FooterBottom />
+        </div>
         </SiteProvider>
       </body>
     </html>

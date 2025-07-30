@@ -40,10 +40,9 @@ export default function Home() {
 
 
   return (
-    <div className="w-full mx-auto bg-gray-100 text-gray-900 ">
-    
-      <Header />
-      <HeroSection />
+   
+    <>
+     
       <ShowcaseSection />
       <AboutUsSection />
       <ServicesSection />
@@ -58,8 +57,8 @@ export default function Home() {
      
 
     <SliderSection  /> */}
- <Footer />
- <FooterBottom />
-    </div>
+
+ </>
+  
   );
 }
